@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --main-color: #34B84A
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: var(--main-font)
+}
+
+/* End of Common Styles */
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: -8rem;
+    /* padding: 3rem; */
+    z-index: 10;
+    animation: navbarChange 1s 0.5s forwards;
+    transition: height 0.5s;
+}
+
+.navbar.change {
+    height: 100vh;
+}
+
+@keyframes navbarChange {
+    0% {
+        top: -8rem;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.navbar-logo {
+    color: #000;
+    font-size: 2rem;
+    position: absolute;
+    background-color: #DD7219;
+    background-color: var(--main-color);
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 200;
+
+}
+
+.navbar-logo-run {
+    color: #fafafa;
+}
+
+.menu {
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    z-index: 500;
+    top: 2rem;
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+
+.line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.line-1 {
+    width: 50%;
+}
+
+.line-3 {
+    width: 50%;
+    margin-left: auto;
+}
+
+.rotate {
+    animation: spin;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+.change .line-1 {
+    transform: translateY(1rem) rotate(90deg);
+    transform-origin: right;
+    margin-bottom: -10px;
+
+}
+
+.change .line-2 {
+    transform: translateY(-1rem) rotate(deg);
+    transform-origin: right;
+}
+
+.change .line-3 {
+    transform: translateY(1rem) rotate(90deg);
+    transform-origin: left;
+    margin-top: -30px
+}
+
+.nav-list {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.1s;
+}
+
+.change .nav-list {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s 0.5s;
+}
+
+.nav-link {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    color: #fff;
+    margin: 2rem 0;
+    transition: color 0.4s;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #DD7219;
+}
+
+/*  End of Navbar */
+
+/* Section 1 */
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background: url(images/forest.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.hometext {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.hometext-heading {
+    font-family: var(--main-font);
+    font-size: 12rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.hometext-heading-2 {
+    margin-top: -7rem;
+    font-family: var(--main-font);
+    font-size: 12rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.hometext-btn {
+    width: 30rem;
+    height: 6rem;
+    background: linear-gradient(to right, var(--main-color), #DD7219);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0.2rem solid #fafafa;
+    border-radius: 50px;
+    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0.3rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    animation: fadeAnimation 1s 2s forwards;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.hometext-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transform: skewX(-30deg);
+    transition: left 0.5s;
+}
+
+.hometext-btn:hover::before {
+    left: 100%;
+}
+
+/* End of Section 1 */
