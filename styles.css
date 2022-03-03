@@ -7,7 +7,7 @@
 
 :root {
     --main-font: 'Poppins', sans-serif;
-    --main-color: #34B84A
+    --main-color: #ED7F1F
 }
 
 html {
@@ -161,7 +161,7 @@ html {
 }
 
 .nav-link:hover {
-    color: #DD7219;
+    color: #ED7F1F;
 }
 
 /*  End of Navbar */
@@ -191,6 +191,7 @@ html {
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
+    -webkit-text-stroke: 2.5px #000;
 
 }
 
@@ -201,21 +202,22 @@ html {
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
+    -webkit-text-stroke: 2.5px #000;
 
 }
 
 .hometext-btn {
     width: 30rem;
     height: 6rem;
-    background: linear-gradient(to right, var(--main-color), #DD7219);
-    color: #fff;
+    background-color: #34B84A;
+    background-color: var(--main-color);
+    color: #000;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    border: 0.2rem solid #fafafa;
+    border: 0.2rem solid #000;
     border-radius: 50px;
-    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
-    text-shadow: 0.3rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+    box-shadow: 1rem 2rem 3rem rgba(255, 255, 255, 0.5);
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
@@ -253,3 +255,105 @@ html {
 }
 
 /* End of Section 1 */
+
+/* Section 2 */
+.subscribe {
+    background-color: #000;
+    padding: 4rem;
+}
+
+.subscribe-heading {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-family: var(--main-font);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subscribe-input {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 50rem;
+    font-size: 3rem;
+}
+
+label {
+    color: #fff;
+}
+
+/* End of Section 2 */
+
+/* Section 3 */
+.information {
+    padding: 4rem;
+    background-color: #000;
+}
+
+.information-heading {
+    color: #fff;
+}
+
+/* End of Section 3 */
+
+/* Footer */
+.footer {
+    background-color: var(--main-color);
+    padding: 4rem 0 2rem 0;
+}
+
+.footer-heading {
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social i {
+    /* font-weight: 100; */
+    color: #000;
+    margin: 3rem 2rem;
+    transition: 0.3s ease-out;
+}
+
+.footer-social i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-link {
+    margin-top: 2rem;
+    margin-bottom: 0 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    border-radius: 8px;
+    /* background-color: var(--main-color); */
+    padding: 0.5rem 4rem;
+    letter-spacing: 0.3rem;
+    transition: all 0.3s;
+}
+
+.footer-link:hover {
+    box-shadow: 0 2rem 3rem #000;
+    color: #fff;
+}
+
+.footer-paragraph {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5rem;
+}
+
+/* End of Footer */
