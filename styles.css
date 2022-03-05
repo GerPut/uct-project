@@ -7,7 +7,8 @@
 
 :root {
     --main-font: 'Poppins', sans-serif;
-    --main-color: #ED7F1F
+    --secondary-font: 'Anonymous Pro', monospace;
+    --main-color: #ED7F1F;
 }
 
 html {
@@ -187,21 +188,21 @@ html {
 
 .hometext-heading {
     font-family: var(--main-font);
-    font-size: 12rem;
+    font-size: 10rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: #fff;
+    color: #fafafa;
     -webkit-text-stroke: 2.5px #000;
 
 }
 
 .hometext-heading-2 {
-    margin-top: -7rem;
+    margin-top: -5rem;
     font-family: var(--main-font);
-    font-size: 12rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #fff;
+    font-size: 10rem;
+    letter-spacing: -6px;
+    font-weight: 700;
+    color: #fafafa;
     -webkit-text-stroke: 2.5px #000;
 
 }
@@ -263,7 +264,7 @@ html {
 }
 
 .subscribe-heading {
-    color: #fff;
+    color: #fafafa;
     text-align: center;
     letter-spacing: 0.2rem;
     font-family: var(--main-font);
@@ -279,11 +280,11 @@ html {
 
 input {
     width: 50rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 label {
-    color: #fff;
+    color: #fafafa;
 }
 
 /* End of Section 2 */
@@ -296,6 +297,27 @@ label {
 
 .information-heading {
     color: #fff;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-family: var(--main-font);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.information-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.information-text-container {
+    width: 600px;
+    padding: 20px;
+}
+
+.information-p {
+    color: #fafafa;
+    font-size: 1.5rem;
 }
 
 /* End of Section 3 */
@@ -347,7 +369,7 @@ label {
 
 .footer-link:hover {
     box-shadow: 0 2rem 3rem #000;
-    color: #fff;
+    color: #fafafa;
 }
 
 .footer-paragraph {
