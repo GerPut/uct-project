@@ -10,6 +10,7 @@
     --secondary-font: 'Anonymous Pro', monospace;
     --main-color: #ED7F1F;
     --secondary-color: #34B84A;
+    --white: #fafafa;
 }
 
 html {
@@ -470,7 +471,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background: var(--main-color);
-    color: #fafafa;
+    color: var(--white);
 }
 
 input,
@@ -490,6 +491,7 @@ textarea:focus {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #000;
 }
@@ -498,16 +500,49 @@ textarea:focus {
     margin-top: 10rem;
     text-align: center;
     font-size: 6rem;
-    color: #fafafa;
+    color: var(--white);
 }
 
 .tips-list-item {
     font-size: 2rem;
     text-align: center;
-    color: #fafafa;
+    color: var(--white);
+}
+
+.tips-sponsors h3 {
+    color: var(--white)
 }
 
 .fa-solid .fa-badge-check {
     color: var(--main-color);
     font-size: 2rem;
+}
+
+/* SMALL FOOTER */
+
+.small-footer {
+    background-color: var(--main-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.small-footer-list {
+    margin-top: 1rem;
+}
+
+.small-footer-list a {
+    font-size: 1.5rem;
+}
+
+.small-footer-social {
+    display: inline-block;
+}
+
+.small-footer-social i {
+    font-size: 2rem;
+    margin: 0 2rem;
 }
