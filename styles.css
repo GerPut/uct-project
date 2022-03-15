@@ -105,8 +105,6 @@ html {
     animation: spin;
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
-
-
 }
 
 @keyframes spin {
@@ -394,15 +392,15 @@ iframe {
 }
 
 .footer-social i {
-    /* font-weight: 100; */
     color: #000;
     margin: 3rem 2rem;
     transition: 0.3s ease-out;
 }
 
 .footer-social i:hover {
-    color: #fff;
+    color: var(--white-color);
     cursor: pointer;
+    transform: scale(1.5, 1.5);
 }
 
 .footer-link {
@@ -412,14 +410,13 @@ iframe {
     font-size: 2rem;
     color: #000;
     border-radius: 8px;
-    /* background-color: var(--main-color); */
     padding: 0.5rem 4rem;
     letter-spacing: 0.3rem;
     transition: all 0.3s;
 }
 
 .footer-link:hover {
-    box-shadow: 0 2rem 3rem #000;
+    box-shadow: 0 0.5rem 1rem #000;
     color: #fafafa;
 }
 
@@ -445,6 +442,7 @@ iframe {
 
 .contact-form-heading {
     text-align: center;
+    text-transform: uppercase;
     font-size: 5rem;
     color: #000;
     font-weight: 800;
@@ -459,13 +457,13 @@ label {
 }
 
 .contact-form-container {
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(255, 255, 255, 0.3);
     height: 600px;
     width: 600px;
     margin: 0 auto;
     padding: 20px;
     border: 2px solid var(--main-color);
-    border-radius: 5px;
+    border-radius: 8px;
 
 }
 
@@ -495,12 +493,13 @@ textarea {
 input[type=submit] {
     padding: 15px 0;
     color: #000;
-    font-size: 1.6rem;
-    border-bottom: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--main-color);
     margin-top: 20px;
     cursor: pointer;
     transition: all .3s ease;
-
+    border-radius: 8px;
 }
 
 input[type=submit]:hover {
@@ -533,10 +532,10 @@ textarea:focus {
 
 .tips-container {
     background-color: rgba(255, 255, 255, 0.473);
-    height: 600px;
-    width: 1000px;
+    max-height: 600px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
     border: 2px solid var(--main-color);
     border-radius: 5px;
 }
@@ -547,19 +546,43 @@ textarea:focus {
     color: var(--white);
 }
 
-.tips-list-item {
+ul li {
+    list-style: none;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
     color: var(--white);
+    padding: 5px 5px;
 }
 
-.tips-sponsors h3 {
-    color: var(--white)
+/* Responsive PRO-TIPS */
+@media(max-width:768px) {
+    .tips-heading {
+        font-size: 4rem;
+    }
+
+    .tips {
+        padding: 15px;
+    }
+
+    ul li {
+        font-size: 1.3em;
+    }
 }
 
-.fa-solid .fa-badge-check {
-    color: var(--main-color);
-    font-size: 2rem;
+@media screen and (max-width:425px) {
+    .tips-heading {
+        font-size: 3rem;
+    }
+
+    .tips {
+        padding: 5px;
+    }
+
+    ul li {
+        font-size: 1em;
+        padding: 3px 3px;
+    }
+
 }
 
 /* SMALL FOOTER */
@@ -583,14 +606,36 @@ textarea:focus {
     font-size: 1.5rem;
 }
 
+.small-footer-list a:hover {
+    box-shadow: 0 1px 10px #000;
+
+}
+
 .small-footer-social {
+    margin-top: 15px;
     display: inline-block;
 }
 
 .small-footer-social i {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0 2rem;
+    padding: 0.5rem;
+    transition: 0.3s ease-out;
 }
+
+.small-footer-social i:hover {
+    color: var(--white-color);
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+
+.footer-paragraph {
+    margin: 15px 5px 0 0;
+}
+
+@media(max-width:768px) {}
+
+@media screen and (max-width:425px) {}
 
 /* TRAILS PAGE */
 
@@ -618,6 +663,7 @@ textarea:focus {
 .box {
     height: 620px;
     width: 400px;
+    border-radius: 8px;
     padding: 1rem;
     margin: 1rem;
     color: white;
