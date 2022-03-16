@@ -20,7 +20,6 @@ html, body {
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
     font-family: var(--main-font)
 }
 
@@ -176,6 +175,7 @@ html {
     width: 100%;
     height: 100vh;
     background: url(images/angel-santos-_rdqPj1udaQ-unsplash.jpg) no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -275,6 +275,7 @@ html {
 }
 
 /* End of Section 1 */
+
 /* Section 2 */
 .sponsors {
     background-color: #000;
@@ -286,49 +287,44 @@ html {
     text-align: center;
     letter-spacing: 0.2rem;
     font-family: var(--main-font);
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .sponsors-container {
     display: flex;
+    justify-content: center;
 }
 
-.sponsor {
+.sponsor-1 {
     width: 200px;
     height: 200px;
-    border: 1px solid white;
+    margin: 0 30px;
+    background: url(images/nike.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-/* Section 2 */
-.subscribe {
-    background-color: #000;
-    padding: 4rem;
+.sponsor-2 {
+    width: 200px;
+    height: 200px;
+    margin: 0 30px;
+    background: url(images/under.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.subscribe-heading {
-    color: var(--white-color);
-    text-align: center;
-    letter-spacing: 0.2rem;
-    font-family: var(--main-font);
-    font-size: 4rem;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
-.subscribe-input {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-input {
-    width: 50rem;
-    font-size: 2rem;
-}
-
-label {
-    color: var(--white-color);
+.sponsor-3 {
+    width: 200px;
+    height: 200px;
+    margin: 0 30px;
+    background: url(images/mtn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* End of Section 2 */
@@ -356,16 +352,55 @@ label {
 
 .information-text-container {
     width: 600px;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
+
 .information-p {
+    text-align: center;
     color: #fafafa;
     font-size: 1.5rem;
+    padding: 20px;
+    font-family: var(--secondary-font);
 }
 
 iframe {
-    border: 2px solid var(--main-color)
+    border: 2px solid var(--secondary-color)
+}
+
+.subscribe {
+    background-color: #000;
+    padding: 4rem;
+}
+
+.subscribe-heading {
+    color: var(--white-color);
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subscribe-input {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subscribe input {
+    margin-top: 10px;
+
+    font-size: 2rem;
+    background-color: var(--white-color);
+}
+
+label {
+    color: var(--white-color);
 }
 
 /* End of Section 3 */
@@ -426,6 +461,11 @@ iframe {
     margin-top: 5rem;
 }
 
+.footer-paragraph a {
+    text-decoration: none;
+    color: #000
+}
+
 /* End of Footer */
 
 /* CONTACT FORM */
@@ -471,6 +511,11 @@ form {
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
+}
+
+input {
+    width: 50rem;
+    font-size: 2rem;
 }
 
 input,
@@ -547,8 +592,10 @@ textarea:focus {
 }
 
 ul li {
+    font-family: var(--secondary-font);
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
     text-align: left;
     color: var(--white);
     padding: 5px 5px;
