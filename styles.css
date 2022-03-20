@@ -23,7 +23,7 @@ html, body {
 
 /* Navbar */
 .navbar {
-    width: 100%;
+    width: 100vw;
     height: 8rem;
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
@@ -33,7 +33,7 @@ html, body {
     transition: height 0.4s;
 }
 
-.navbar.rotatechange {
+.navbar.drop {
     height: 100vh;
 }
 
@@ -95,7 +95,7 @@ html, body {
     margin-left: auto;
 }
 
-.rotate {
+.spin {
     animation: spin;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
@@ -142,7 +142,7 @@ html, body {
     transition: all 0.1s;
 }
 
-.rotatechange .nav-list {
+.drop .nav-list {
     opacity: 1;
     visibility: visible;
     transition: all 0.7s 0.5s;
