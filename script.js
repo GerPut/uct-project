@@ -1,10 +1,13 @@
+// Animate on Scroll
+AOS.init();
+
 // Navbar
-const menu = document.querySelector(".menu");
+const lineMenu = document.querySelector(".lines-menu");
 const navbar = document.querySelector(".navbar");
 
-menu.addEventListener("click", () => {
-    navbar.classList.toggle("change");
-    menu.classList.toggle('change')
-    menu.classList.toggle("rotate")
+lineMenu.addEventListener("click", () => {
+    navbar.classList.toggle("rotatechange");
+    lineMenu.classList.toggle('rotatechange')
+    lineMenu.classList.toggle("rotate")
 });
 // End of Navbar
