@@ -18,9 +18,6 @@
 html, body {
     width: 100%;
     height: 100%;
-}
-
-html {
     font-size: 62.5%;
 }
 
@@ -34,11 +31,11 @@ html {
     position: fixed;
     top: -8rem;
     z-index: 10;
-    animation: navbarChange 1s 0.5s forwards;
-    transition: height 0.5s;
+    animation: navbarChange 1s 0.4s forwards;
+    transition: height 0.4s;
 }
 
-.navbar.change {
+.navbar.rotatechange {
     height: 100vh;
 }
 
@@ -71,7 +68,7 @@ html {
     color: var(--white-color);
 }
 
-.menu {
+.lines-menu {
     width: 4rem;
     height: 4rem;
     position: fixed;
@@ -82,7 +79,6 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-
 }
 
 .line {
@@ -117,19 +113,19 @@ html {
     }
 }
 
-.change .line-1 {
+.rotatechange .line-1 {
     transform: translateY(1rem) rotate(90deg);
     transform-origin: right;
     margin-bottom: -10px;
 
 }
 
-.change .line-2 {
-    transform: translateY(-1rem) rotate(0 deg);
+.rotatechange .line-2 {
+    transform: translateY(-1rem) rotate(deg);
     transform-origin: right;
 }
 
-.change .line-3 {
+.rotatechange .line-3 {
     transform: translateY(1rem) rotate(90deg);
     transform-origin: left;
     margin-top: -30px
@@ -148,7 +144,7 @@ html {
     transition: all 0.1s;
 }
 
-.change .nav-list {
+.rotatechange .nav-list {
     opacity: 1;
     visibility: visible;
     transition: all 0.7s 0.5s;
@@ -362,10 +358,9 @@ html {
 
 .information-p {
     text-align: center;
-    color: #fafafa;
-    font-size: 1.5rem;
+    color: var(--white-color);
     padding: 20px;
-    font-family: var(--secondary-font);
+    font: 1.5rem var(--secondary-font);
 }
 
 iframe {
@@ -381,8 +376,7 @@ iframe {
     color: var(--white-color);
     text-align: center;
     letter-spacing: 0.2rem;
-    font-family: var(--main-font);
-    font-size: 2rem;
+    font: 2rem var(--main-font);
     font-weight: 900;
     text-transform: uppercase;
 }
