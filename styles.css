@@ -23,7 +23,7 @@ html, body {
 
 /* Navbar */
 .navbar {
-    width: 100vw;
+    width: 100%;
     height: 8rem;
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
@@ -268,10 +268,33 @@ html, body {
     }
 }
 
+@media(max-width:768px) {
+    .hometext-heading {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .hometext-heading-2 {
+        font-size: 6rem;
+    }
+}
+
+@media(max-width:425px) {
+    .hometext-heading {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .hometext-heading-2 {
+        font-size: 5rem;
+    }
+}
+
 /* End of Section 1 */
 
 /* Section 2 */
 .sponsors {
+    width: 100%;
     background-color: var(--black-color);
     padding: 4rem;
 }
@@ -321,10 +344,13 @@ html, body {
     background-position: center center;
 }
 
+@media(max-width:768px) {}
+
 /* End of Section 2 */
 
 /* Section 3 */
 .information {
+    width: 100%;
     padding: 4rem;
     background-color: var(--black-color);
 }
@@ -362,10 +388,12 @@ html, body {
 }
 
 iframe {
+    width: 100%;
     border: 2px solid var(--secondary-color)
 }
 
 .subscribe {
+    width: 100%;
     background-color: var(--black-color);
     padding: 4rem;
 }
@@ -395,10 +423,20 @@ label {
     color: var(--white-color);
 }
 
+
+@media(max-width:768px) {
+    .information-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* End of Section 3 */
 
 /* Footer */
 .footer {
+    width: 100%;
     background: var(--gradient);
     padding: 4rem 0 2rem 0;
 }
