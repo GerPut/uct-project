@@ -621,6 +621,14 @@ textarea:focus {
     text-align: center;
     font-size: 6rem;
     color: var(--white);
+    font-family: var(--main-font);
+}
+
+.tips-container p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: var(--main-font);
 }
 
 ul li {
@@ -628,9 +636,10 @@ ul li {
     list-style: none;
     font-size: 1.6rem;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
     color: var(--white);
     padding: 5px 5px;
+    line-height: 1.6;
 }
 
 /* Responsive PRO-TIPS */
@@ -736,7 +745,9 @@ ul li {
 }
 
 .trails-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
 }
 
 
@@ -772,4 +783,18 @@ ul li {
 
 .fas.fa-star {
     color: orange;
+}
+
+@media(max-width:1024px) {
+    .trails-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+@media(max-width:768px) {
+    .trails-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
 }
