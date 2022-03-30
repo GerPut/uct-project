@@ -1,0 +1,46 @@
+/* Responsive */
+@media screen and (max-width:1024px) {
+    .section-1 {
+        background-position: 60% 0;
+    }
+
+    .hometext-heading {
+        font-size: 8rem;
+    }
+
+    .hometext-heading-2 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hometext {
+        left: 35%;
+    }
+
+    .hometext-heading {
+        font-size: 7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hometext-heading-2 {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .hometext {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    .hometext-heading {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .hometext-heading-2 {
+        font-size: 5rem;
+    }
+}
