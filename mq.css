@@ -126,3 +126,19 @@
 
 
 /* Small Footer responsive */
+@media screen and (max-width:425px) {
+
+    .small-footer-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+
+    .footer-link {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+}
