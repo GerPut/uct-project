@@ -563,7 +563,7 @@ textarea:focus {
 }
 
 .tips-container {
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(255, 255, 255, 0.7);
     max-height: 600px;
     max-width: 1000px;
     margin: 0 auto;
