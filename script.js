@@ -10,5 +10,9 @@ lineMenu.addEventListener("click", () => {
 });
 // End of Navbar
 
+//Button 
+function newPage() {
+    window.location.href = 'trails.html'
+}
 // Animate on Scroll
 AOS.init();
