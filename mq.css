@@ -28,7 +28,10 @@
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:480px) {
+    .section-1 {
+        background-position: 70% 0;
+    }
     .hometext {
         position: absolute;
         top: 40%;
@@ -84,11 +87,14 @@
     }
 
     ul li {
-        font-size: 1.3em;
+        font-size: 1.5rem;
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:480px) {
+    .tips p{
+        font-size: 1rem;
+    }
     .tips-heading {
         font-size: 3rem;
     }
@@ -98,7 +104,27 @@
     }
 
     ul li {
-        font-size: 1em;
+        font-size: 1.2rem;
+        padding: 3px 3px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+
+.tips p{
+    font-size: 1rem;
+}
+    .tips-heading {
+        font-size: 2.5rem;
+    }
+
+    .tips {
+        padding: 5px;
+    }
+
+    ul li {
+        font-size: 1rem;
         padding: 3px 3px;
     }
 
