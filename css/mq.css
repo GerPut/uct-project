@@ -150,6 +150,13 @@
     }
 }
 
+/* Contact form responsive */
+
+@media screen and (max-width:768px) {
+    .contact-form-container {
+       margin-top: 20rem;
+    }
+}
 
 /* Small Footer responsive */
 @media screen and (max-width:480px) {
