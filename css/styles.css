@@ -169,7 +169,7 @@ html, body {
 .section-1 {
     width: 100%;
     height: 100vh;
-    background: url(images/angel-santos-_rdqPj1udaQ-unsplash.jpg) no-repeat;
+    background: url(../images/angel-santos-_rdqPj1udaQ-unsplash.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -273,7 +273,7 @@ html, body {
     width: 200px;
     min-height: 200px;
     margin: 0 30px;
-    background: url(images/nike.png);
+    background: url(../images/nike.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -283,7 +283,7 @@ html, body {
     width: 200px;
     min-height: 200px;
     margin: 0 30px;
-    background: url(images/under.png);
+    background: url(../images/under.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -293,7 +293,7 @@ html, body {
     width: 200px;
     min-height: 200px;
     margin: 0 30px;
-    background: url(images/mtn.png);
+    background: url(../images/mtn.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -448,7 +448,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(images/brian-erickson-FjgQIivGkzo-unsplash.jpg) no-repeat;
+    background: url(../images/brian-erickson-FjgQIivGkzo-unsplash.jpg) no-repeat;
     background-size: cover;
 
 }
@@ -548,7 +548,7 @@ textarea:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(images/chermiti-mohamed-FdsqHM4fawg-unsplash.jpg) no-repeat;
+    background: url(../images/chermiti-mohamed-FdsqHM4fawg-unsplash.jpg) no-repeat;
     background-position: center center;
 }
 
