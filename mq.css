@@ -65,7 +65,7 @@
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:480px) {
     .information-text-container {
         max-width: 400px;
     }
@@ -152,14 +152,13 @@
 
 
 /* Small Footer responsive */
-@media screen and (max-width:425px) {
+@media screen and (max-width:480px) {
 
     .small-footer-list {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* flex-wrap: wrap; */
     }
 
     .footer-link {
