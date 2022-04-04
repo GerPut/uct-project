@@ -132,7 +132,7 @@
 
 /* Trails page responsive */
 
-@media(max-width:1024px) {
+@media screen and (max-width:900px) {
     .trails h1 {
         margin-top: 10rem;
     }
@@ -143,7 +143,7 @@
     }
 }
 
-@media(max-width:768px) {
+@media screen and (max-width:768px) {
     .trails-container {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
@@ -151,10 +151,9 @@
 }
 
 /* Contact form responsive */
-
-@media screen and (max-width:768px) {
-    .contact-form-container {
-       margin-top: 20rem;
+@media screen and (max-width:370px){
+    .contact-form-heading{
+        font-size: 3.5rem;
     }
 }
 
