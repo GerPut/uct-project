@@ -481,6 +481,7 @@ label{
     height: 600px;
     width:600px;
     margin-top: 10%;
+    margin-bottom: 10%;
     padding: 20px;
     border: 2px solid var(--main-color);
     border-radius: 8px;
@@ -651,8 +652,10 @@ ul li {
     background-color: #000;
 }
 
+
 .trails h1 {
     font-family: var(--main-font);
+    margin-top: 10rem;
     margin-bottom: 10px;
     text-align: center;
     font-size: 6rem;
@@ -661,7 +664,7 @@ ul li {
 
 .trails-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
 }
 
