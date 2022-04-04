@@ -451,6 +451,7 @@ label {
     align-items: center;
     background: url(../images/brian-erickson-FjgQIivGkzo-unsplash.jpg) no-repeat;
     background-size: cover;
+    position:relative;
 
 }
 
@@ -480,8 +481,9 @@ label{
     background-color: rgba(255, 255, 255, 0.5);
     height: 600px;
     width:600px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    position: absolute;
+    top:20%;
+    transform:translateY(-50%);
     padding: 20px;
     border: 2px solid var(--main-color);
     border-radius: 8px;

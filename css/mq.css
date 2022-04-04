@@ -151,9 +151,20 @@
 }
 
 /* Contact form responsive */
+
+@media screen and (max-width:480px){
+    .contact-form-container{
+        height: 600px;
+    width:400px;
+    }
+}
 @media screen and (max-width:370px){
+    .contact-form-container{
+        width:300px;
+    }
     .contact-form-heading{
         font-size: 3.5rem;
+        width:350px;
     }
 }
 
