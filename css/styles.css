@@ -51,6 +51,7 @@ html, body {
     color: var(--black-color);
     font-family: var(--main-font);
     font-size: 2rem;
+    text-decoration: none;
     position: absolute;
     background: var(--gradient);
     margin-top: 2rem;
