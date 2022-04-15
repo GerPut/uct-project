@@ -19,6 +19,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-size: 62.5%;
+    overflow-x: clip;
 }
 
 /* Navbar */
@@ -173,8 +174,7 @@ html, body {
     background: url(../images/angel-santos-_rdqPj1udaQ-unsplash.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .hometext {

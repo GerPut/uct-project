@@ -29,14 +29,12 @@
 }
 
 @media screen and (max-width:480px) {
-    .section-1 {
-        background-position: 70% 0;
-    }
+    
     .hometext {
         position: absolute;
         top: 40%;
         left: 50%;
-    }
+    } 
 
     .hometext-heading {
         font-size: 5rem;
@@ -45,6 +43,9 @@
 
     .hometext-heading-2 {
         font-size: 5rem;
+    }
+    iframe{
+max-width:300px;
     }
 }
 
