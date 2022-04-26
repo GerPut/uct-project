@@ -158,6 +158,15 @@ max-width:300px;
         height: 600px;
     width:400px;
     }
+    .contact-message{
+        width:400px; 
+    }
+    .contact-message p{
+        font-size: 1rem;
+    }
+    .contact-message h4{
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width:370px){
     .contact-form-container{

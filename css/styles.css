@@ -19,7 +19,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-size: 62.5%;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -447,12 +447,18 @@ label {
 .contact-form {
     height: 110vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url(../images/brian-erickson-FjgQIivGkzo-unsplash.jpg) no-repeat;
     background-size: cover;
     position:relative;
 
+}
+
+.box-1{
+position:absolute;
+top:15%;
 }
 
 .contact-form-heading {
@@ -481,9 +487,9 @@ label{
     background-color: rgba(255, 255, 255, 0.5);
     height: 600px;
     width:600px;
-    position: absolute;
+    /* position: absolute;
     top:20%;
-    transform:translateY(-50%);
+    transform:translateY(-50%); */
     padding: 20px;
     border: 2px solid var(--main-color);
     border-radius: 8px;
@@ -549,6 +555,36 @@ input:focus,
 textarea:focus {
     border-bottom: 2px solid var(--main-color);
 }
+
+.contact-message{
+    width:600px;
+    background: var(--gradient);
+    border-radius: 8px;
+    margin: 1rem 0 1rem 0;
+    font-family: var(--main-font);
+    border:2px solid #000;
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    }
+    
+    .contact-message h4{
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .contact-message p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .contact-message a{
+        padding-top: 1rem;
+        text-align: center;
+        color:var(--white-color);
+        font-size: 2rem;
+        text-decoration: none;
+    }
 
 /* PRO-TIPS PAGE */
 .tips {
@@ -708,11 +744,11 @@ ul li {
 
 /* Error Page */
 .Error-container{
-    font-family: var(--main-font);
-    background-color: var(--main-color);
-    border:2px solid #000;
-    padding:2rem;
-    position: absolute;
+font-family: var(--main-font);
+background-color: var(--main-color);
+border:2px solid #000;
+padding:2rem;
+position: absolute;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
